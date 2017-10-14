@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="10_CatchDotGame create Runnable Jar">
+    <!--this file was created by Eclipse Runnable JAR file Export Wizard-->
+    <!--ANT 1.7 is required-->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/.."/>
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/CatchDotGame.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="net.boelstlf.raspi.CatchDot"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ pi4j-core-1.2-SNAPSHOT.jar"/>
+            </manifest>
+            <zipfileset src="jar-in-jar-loader.zip"/>
+            <fileset dir="${dir.jarfile}/target/classes"/>
+            <fileset dir="/Users/boelstlf/git/Pi4JDevices/pi4jdevices/target/classes"/>
+            <zipfileset dir="/Users/boelstlf/.m2/repository/com/pi4j/pi4j-core/1.2-SNAPSHOT" includes="pi4j-core-1.2-SNAPSHOT.jar"/>
+        </jar>
+    </target>
+</project>

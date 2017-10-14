@@ -1,0 +1,16 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.boelstlf.raspi</groupId>
+	<artifactId>CatchDot</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Catch Dot</name>
+	<description>Catch the dot </description>
+	<dependencies>
+		<dependency>
+			<groupId>net.boelstlf.raspi</groupId>
+			<artifactId>pi4jdevices</artifactId>
+			<version>0.0.1-snapshot</version>
+		</dependency>
+	</dependencies>
+</project>
